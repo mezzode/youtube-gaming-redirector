@@ -17,7 +17,7 @@
         },
         {
             "matches": ["https://feedly.com/*"],
-            "js": ["http://code.jquery.com/jquery-1.9.1.min.js","Youtube_Gaming_Feedly.user.js"]
+            "js": ["jquery-2.1.4.min.js","Youtube_Gaming_Feedly.user.js"]
         }
     ]
 }
