@@ -3,7 +3,7 @@
 
     "name": "Youtube Gaming Redirector",
     "description": "This extension redirects Youtube links to Youtube Gaming where possible.",
-    "version": "0.2",
+    "version": "0.2.0",
 
     "icons": { "512": "icon512.png"},
 
