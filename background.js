@@ -1,6 +1,6 @@
 chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
     console.log("test");
-    if (changeInfo.status == 'complete'){
+    if (changeInfo.status == 'complete' && tab.url.match("^http")){
         console.log("test");
         chrome.storage.sync.get({
             redirect: true,
