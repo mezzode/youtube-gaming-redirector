@@ -5,6 +5,10 @@
     "description": "This extension redirects Youtube links to Youtube Gaming where possible.",
     "version": "0.2",
 
+    "permissions": [
+        "storage"
+    ],
+
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
