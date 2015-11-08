@@ -18,7 +18,7 @@ pageMod.PageMod({
 });
 
 pageMod.PageMod({
-    include: "http*",
+    include: "*",
     exclude: "https://www.youtube.com/*",
     contentScriptFile: self.data.url("Youtube_Gaming_Linker.user.js")
 });
