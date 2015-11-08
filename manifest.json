@@ -3,5 +3,21 @@
 
     "name": "Youtube Gaming Redirector",
     "description": "This extension redirects Youtube links to Youtube Gaming where possible.",
-    "version": "0.1"
+    "version": "0.1",
+
+    "content_scripts": [
+        {
+            "matches": ["*"],
+            "exclude_matches": ["https://www.youtube.com/*"],
+            "js": ["Youtube_Gaming_Linker.user.js"]
+        },
+        {
+            "matches": ["https://www.youtube.com*"],
+            "js": ["Youtube_Gaming_Redirect.user.js"]
+        },
+        {
+            "matches": ["https://feedly.com/*"],
+            "js": ["http://code.jquery.com/jquery-1.9.1.min.js","Youtube_Gaming_Feedly.user.js"]
+        }
+    ]
 }
