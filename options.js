@@ -31,5 +31,13 @@ function restore_options() {
     });
 }
 
+function reset_status() {
+    var status = document.getElementById('status');
+    status.textContent = '';
+}
+
 document.addEventListener('DOMContentLoaded', restore_options);
 document.getElementById('save').addEventListener('click', save_options);
+document.getElementById('redirect').addEventListener('change', reset_status);
+document.getElementById('linker').addEventListener('change', reset_status);
+document.getElementById('feedly').addEventListener('change', reset_status);
