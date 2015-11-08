@@ -3,7 +3,7 @@
 // @namespace   numuon.me
 // @description Change all Youtube links to Youtube Gaming links.
 // @exclude     https://www.youtube.com/*
-// @version     1
+// @version     1.1
 // @grant       none
 // ==/UserScript==
 
