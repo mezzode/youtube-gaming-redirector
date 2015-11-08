@@ -1,0 +1,16 @@
+{
+  "title": "Youtube Gaming Redirector",
+  "name": "youtube-gaming-redirector",
+  "version": "0.1.0",
+  "description": "This extension redirects Youtube links to Youtube Gaming where possible.",
+  "main": "index.js",
+  "author": "numuon",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  },
+  "license": "MIT",
+  "keywords": [
+    "jetpack"
+  ]
+}
