@@ -11,9 +11,9 @@ function save_options() {
         // Update status
         var status = document.getElementById('status');
         status.textContent = 'Options saved.';
-        setTimeout(function(){
+        /* setTimeout(function(){
             status.textContent = '';
-        }, 750);
+        }, 750); */
     });
 }
 
