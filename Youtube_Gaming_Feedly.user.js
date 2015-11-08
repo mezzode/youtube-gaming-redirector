@@ -11,7 +11,7 @@
 $(document).ready(function() {
     window.setInterval(function() {
         $('a').each(function(i, thisLink) {
-            thisLink.href = thisLink.href.replace('www.youtube.com/','gaming.youtube.com/');
+            thisLink.href = thisLink.href.replace('www.youtube.com/watch?','gaming.youtube.com/watch?');
         });
     }, 500);
 });

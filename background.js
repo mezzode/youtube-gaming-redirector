@@ -7,13 +7,16 @@ chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
             linker: true,
             feedly: true
         }, function(items) {
-            if (items.redirect && tab.url.match("^https:\/\/www\.youtube\.com\/*")) {
+            if (items.redirect && tab.url.match("^https:\/\/www\.youtube\.com\/watch\?")) {
+                console.log("redirect");
                 chrome.tabs.executeScript(tabId, {file: "Youtube_Gaming_Redirect.user.js"});
             }
-            if (items.linker && !(tab.url.match("^https:\/\/www\.youtube\.com\/*"))) {
+            if (items.linker && !(tab.url.match("^https:\/\/www\.youtube\.com\/"))) {
+                console.log("linker");
                 chrome.tabs.executeScript(tabId, {file: "Youtube_Gaming_Linker.user.js"});
             }
-            if (items.feedly && tab.url.match("^https:\/\/feedly\.com\/*")){
+            if (items.feedly && tab.url.match("^https:\/\/feedly\.com\/")){
+                console.log("feedly");
                 chrome.tabs.executeScript(tabId, {file: "jquery-2.1.4.min.js"});
                 chrome.tabs.executeScript(tabId, {file: "Youtube_Gaming_Feedly.user.js"});
             }

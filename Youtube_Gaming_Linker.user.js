@@ -15,5 +15,5 @@ links = document.evaluate("//a[@href]",
     null);
 for (var i=0;i<links.snapshotLength;i++) {
     var thisLink = links.snapshotItem(i);
-    thisLink.href = thisLink.href.replace('www.youtube.com','gaming.youtube.com');
+    thisLink.href = thisLink.href.replace('www.youtube.com/watch?','gaming.youtube.com/watch?');
 }
