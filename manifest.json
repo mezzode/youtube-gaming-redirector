@@ -6,24 +6,14 @@
     "version": "0.2",
 
     "permissions": [
-        "storage"
+        "storage",
+        "tabs",
+        "<all_urls>"
     ],
 
-    "content_scripts": [
-        {
-            "matches": ["<all_urls>"],
-            "exclude_matches": ["https://www.youtube.com/*"],
-            "js": ["Youtube_Gaming_Linker.user.js"]
-        },
-        {
-            "matches": ["https://www.youtube.com/*"],
-            "js": ["Youtube_Gaming_Redirect.user.js"]
-        },
-        {
-            "matches": ["https://feedly.com/*"],
-            "js": ["jquery-2.1.4.min.js","Youtube_Gaming_Feedly.user.js"]
-        }
-    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
 
     "options_ui": {
         "page": "options.html",
